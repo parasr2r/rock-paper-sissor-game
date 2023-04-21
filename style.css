@@ -55,3 +55,20 @@ body{
   .reset-button:hover{
     transform: scale(1.1);
   }
+  @media screen and (max-width: 600px){
+
+    .button-1{
+      height: 50px;
+      width: 50px;
+    }
+    .img{
+      width: 30px;
+    }
+    .container{
+      border: 1px solid yellow;
+      border-radius: 20px;
+    }
+    body{
+      margin-top: 150px;
+    }
+  }
