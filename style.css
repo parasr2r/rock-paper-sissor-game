@@ -1,0 +1,57 @@
+body{
+    background-color: rgb(26, 26, 26);
+    color: white;
+    font-family: arial;
+    font-weight: bold;
+  }
+  .container{
+    display: grid;
+    place-items: center;
+   
+    padding: 20px 20px;
+
+
+  }
+  .Title{
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .button-1{
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    border-style: solid;
+    border-color: yellow;
+    background-color: rgb(26, 26, 26);
+    margin-left: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+
+  }
+  .button-1:hover{
+    transform: scale(1.2);
+  }
+  .img{
+    width: 60px;
+    background-color: transparent;
+  }
+  .result{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .result-img{
+    width: 39px;
+  }
+  .reset-button{
+    padding: 15px 25px ;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .reset-button:hover{
+    transform: scale(1.1);
+  }

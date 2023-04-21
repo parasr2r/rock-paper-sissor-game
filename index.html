@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <p class="Title">Rock Paper scissors</p>
+      <!-- button for Rock down below -->
+      <div>
+        <button class="button-1"
+        onclick="
+          playGame ('rock');
+      
+      "
+      >
+        <img class="img" src="images/rock-emoji.png" alt="">
+      </button>
+  
+  
+      <!-- button for paper down below -->
+      <button class="button-1"
+        onclick="
+          playGame ('paper');
+      "
+      >
+      <img class="img" src="images/paper-emoji.png" alt="">
+      </button>
+  
+  
+      <!-- button for sussors down below -->
+      <button class="button-1"
+        onclick="
+         playGame ('scissors');
+      "
+      >
+      <img class="img" src="images/scissors-emoji.png" alt="">
+      </button>
+      </div>
+    
+  
+      <!-- shows result -->
+      <p class="js-result"></p>
+  
+  
+      <!-- shows move  -->
+      <p class="js-move move"></p>
+  
+  
+      <!-- score board here -->
+      <p class="js-score"></p>
+  
+  
+      <!-- button to reset score -->
+      <button class="reset-button"
+        onclick="
+      score.wins = 0,
+      score.losses = 0,
+      score.ties = 0
+      localStorage.removeItem('score');
+      console.log('score reset')
+      updateScore();
+      
+      "
+      >
+        Reset
+      </button>
+    </div>
+  
+
+    <script src="script.js"></script>
+  </body>
+</html>
